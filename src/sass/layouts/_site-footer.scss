@@ -1,0 +1,196 @@
+.footer__section {
+  background-color: $background-secondary-color;
+}
+.footer__container {
+  padding-bottom: 43px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+.footer__thumb-titles {
+  max-width: 234px;
+  margin-bottom: 43px;
+  @media screen and (min-width: 768px) {
+    max-width: 340px;
+    margin-top: 7px;
+    margin-bottom: 91px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 474px;
+    margin-top: 0;
+    margin-bottom: 97px;
+  }
+}
+.footer__double-title {
+  font-family: Titan One, sans-serif;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 17px;
+
+  color: $text-pink;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+    letter-spacing: 0.04em;
+
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+
+    margin-bottom: 15px;
+  }
+}
+.footer__title {
+  font-family: Titan One, sans-serif;
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $text-red;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: calc(55 / 48);
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: calc(66 / 58);
+  }
+}
+.footer__socials {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 46px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 57px;
+  }
+}
+.footer__social-item {
+  display: inline-block;
+  position: relative;
+  font-size: 24px;
+}
+.footer__social-item:not(:last-child) {
+  margin-right: 28px;
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 24px;
+  }
+}
+.footer__social-link {
+  color: $background-white;
+}
+.footer__social-link:before {
+  transform: scale(1);
+  content: '';
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  display: block;
+  background-color: $social-icons-fill;
+  color: $hover-social-icons-color;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-out;
+
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+.footer__social-link:hover:before,
+.footer__social-link:focus:before {
+  transform: scale(0);
+  transition: all 0.3s ease-in;
+  color: $hover-social-icons-color;
+}
+
+.footer__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  fill: currentColor;
+
+  position: absolute;
+  top: 6px;
+  left: 6px;
+
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+.footer__social-link:hover .footer__icon,
+.footer__social-link:focus .footer__icon {
+  transform: scale(1.5);
+  color: $text-red;
+  transition: all 0.3s ease-in;
+}
+.footer__contact {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  text-align: right;
+  letter-spacing: 0.02em;
+
+  color: $text-black;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+  .footer__contact {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
+.footer__tel {
+  color: $text-pink;
+  transition: color 0.3s ease-out;
+  &:hover,
+  &:focus {
+    color: $text-red;
+  }
+}
+
+.footer__thumb-licence {
+  border-top: 1px solid $border-color;
+}
+.footer__licence {
+  display: block;
+  padding: 25px 70px;
+  max-width: 320px;
+  margin: auto;
+
+  color: $text-secondary;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(21 / 14);
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    padding: 29px 212px 18px 212px;
+    max-width: 768px;
+
+    line-height: calc(26 / 14);
+    letter-spacing: 0.02em;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 9px 387px 10px 387px;
+    max-width: 1200px;
+  }
+}

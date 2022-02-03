@@ -1,0 +1,409 @@
+@media screen and (min-width: 320px) {
+  .contacts {
+    background-image: linear-gradient(
+      to bottom,
+      $background-white 4%,
+      $background-secondary-color 4%
+    );
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    padding-bottom: 113px;
+  }
+
+  .contacts__card {
+    background-color: $background-white;
+    max-width: 220px;
+    max-height: 427px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 43px 20px;
+  }
+
+  .contacts__card:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .contacts__name {
+    display: inline-block;
+    padding: 0 25px;
+    background-color: $background-two-color;
+    color: $background-secondary-color;
+    line-height: 1.86;
+    text-transform: uppercase;
+    border-radius: 4px;
+  }
+
+  .contacts__name-color {
+    width: 138px;
+  }
+
+  .contacts__city {
+    margin-bottom: 10px;
+  }
+
+  .contacts__card-text {
+    color: $text-secondary;
+    font-size: 11px;
+    line-height: 150%;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+
+  .contacts__card-border {
+    padding-bottom: 25px;
+    border-bottom: 1px solid $border-color;
+  }
+
+  .contacts__work-hours-marg {
+    margin-bottom: 10px;
+  }
+
+  .contacts__work-hours {
+    color: $text-pink;
+  }
+
+  .contacts__address-list {
+    margin-top: 25px;
+  }
+
+  .btn-red {
+    display: block;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    border-radius: 22px;
+    background-color: $text-red;
+    color: $background-white;
+    border: none;
+    width: 161px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 54px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .btn-white {
+    display: block;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    border-radius: 22px;
+    background-color: $background-white;
+    color: $text-red;
+    border: none;
+    width: 161px;
+    height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+
+  .maps {
+    min-width: 120px;
+    width: 80vw;
+    height: 80vh;
+  }
+
+  .modal-window {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal-window.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .modal-window.is-hidden .modal {
+    transform: translate(-50% -50%) scale(1.2);
+  }
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    background-color: $color-button;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .modal__close-button {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $color-button;
+  }
+  .contacts__card-link:hover,
+  .contacts__card-link:focus {
+    color: $text-red;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts__head {
+    margin-bottom: 54px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts__head {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contacts__card {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 220px;
+    max-height: 544px;
+    margin: 0;
+    padding: 50px 31px;
+  }
+
+  .contacts__card:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+
+  .contacts__name {
+    display: block;
+    margin-bottom: 30px;
+    height: 28px;
+  }
+
+  .contacts__name-color {
+    width: 138px;
+  }
+
+  .contacts__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 81px;
+  }
+
+  .btn-red,
+  .btn-white {
+    margin: 0;
+  }
+
+  .btn-red {
+    width: 191px;
+    margin-right: 15px;
+  }
+
+  .btn-white {
+    width: 177px;
+  }
+
+  .contacts {
+    font-size: 14px;
+    background-image: linear-gradient(
+        to bottom,
+        $background-white 10%,
+        $background-secondary-color 10%
+      ),
+      url('./../images/content-backg.png');
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contacts__card-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts {
+    background-image: url('./../images/content-backg.png'),
+      linear-gradient(to bottom, $background-white 10%, $background-secondary-color 10%);
+    background-repeat: no-repeat;
+  }
+
+  .contacts__container {
+    max-width: 1280px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contacts__card {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 330px;
+    max-height: 572px;
+    padding: 51px 43px;
+    padding-bottom: 62px;
+  }
+
+  .contacts__name {
+    margin-bottom: 32px;
+  }
+
+  .btn-red {
+    width: 198px;
+  }
+
+  .btn-white {
+    width: 180px;
+  }
+
+  .contacts {
+    font-size: 16px;
+  }
+
+  .contacts__card-text {
+    font-size: 16px;
+  }
+  .contacts__icon-franchise {
+    fill: $text-red;
+  }
+
+  .contacts__icon-location {
+    fill: $background-white;
+  }
+
+  .contacts__button-location:hover,
+  .contacts__button-location:focus {
+    background-color: $hover-buttons-red;
+  }
+
+  .contacts__button-franchise:hover,
+  .contacts__button-franchise:focus {
+    background-color: $hover-buttons-gray;
+  }
+}
+
+.contacts__modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1050;
+  opacity: 0;
+
+  transition: opacity 200ms ease-in;
+  pointer-events: none;
+  margin: 0;
+  padding: 0;
+
+  &:target {
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+  }
+}
+.contacts__modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+@media (min-width: 480px) {
+  .contacts__modal-dialog {
+    max-width: 480px;
+    margin: 30px auto;
+  }
+}
+.contacts__modal-content {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+  background-color: $background-white;
+  background-clip: padding-box;
+  border: 1px solid $text-pink;
+  box-shadow: 0 5px 15px rgb(144, 126, 130);
+  border-radius: 24px;
+  outline: 0;
+}
+
+.contacts__modal-header {
+  display: flex;
+  border-bottom: 1px solid #eceeef;
+}
+.contacts__modal-title {
+  font-family: Titan One, sans-serif;
+
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  color: $text-pink;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.154;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+
+    letter-spacing: 0.04em;
+  }
+}
+.contacts__modal-button {
+  text-align: center;
+  padding-top: 4px;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  color: $background-white;
+  background-color: $background-pink;
+
+  border-radius: 50%;
+
+  transition: background-color $transition-options;
+  cursor: pointer;
+  &:focus,
+  &:hover {
+    background-color: $hover-social-icons-fill;
+  }
+}
+.contacts__modal-cross {
+  display: inline-block;
+  fill: currentColor;
+}
+.contacts__modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 15px;
+  overflow-y: auto;
+  display: inline-block;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(19 / 12);
+  text-align: left;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(25 / 14);
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: calc(28 / 16);
+  }
+}
